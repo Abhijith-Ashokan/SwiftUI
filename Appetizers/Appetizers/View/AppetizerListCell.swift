@@ -2,7 +2,7 @@
 //  AppetizerListCell.swift
 //  Appetizers
 //
-//  Created by Aoole on 27/02/24.
+//  Created by Abhijith on 27/02/24.
 //
 
 import SwiftUI
@@ -14,8 +14,7 @@ struct AppetizerListCell: View {
  
         HStack {
             
-            Image("asian-flank-steak")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height:90)
                 .cornerRadius(9)

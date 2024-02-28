@@ -30,7 +30,7 @@ struct AppetizerTabView: View {
                     Text("Order")
                 }
         }
-        .tint(Color("BrandPrimary"))
+        .tint(Color.primaryGreen)
     }
 }
 
