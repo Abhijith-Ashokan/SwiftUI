@@ -10,6 +10,10 @@
 		186447E32B904777004AFF70 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447E22B904777004AFF70 /* AppetizerDetailView.swift */; };
 		186447EB2B90685B004AFF70 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447EA2B90685B004AFF70 /* APButton.swift */; };
 		186447ED2B906AD3004AFF70 /* DismissXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447EC2B906AD3004AFF70 /* DismissXButton.swift */; };
+		186447EF2B908C03004AFF70 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447EE2B908C03004AFF70 /* AccountViewModel.swift */; };
+		186447F12B90951B004AFF70 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447F02B90951B004AFF70 /* String + Extension.swift */; };
+		186447F32B9196E3004AFF70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447F22B9196E3004AFF70 /* User.swift */; };
+		186447F62B91B1F5004AFF70 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186447F52B91B1F5004AFF70 /* EmptyState.swift */; };
 		187051F92B8DD9BA009B0895 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187051F82B8DD9BA009B0895 /* AppetizersApp.swift */; };
 		187051FB2B8DD9BA009B0895 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187051FA2B8DD9BA009B0895 /* AppetizerTabView.swift */; };
 		187051FD2B8DD9BC009B0895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187051FC2B8DD9BC009B0895 /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 		186447E22B904777004AFF70 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		186447EA2B90685B004AFF70 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		186447EC2B906AD3004AFF70 /* DismissXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissXButton.swift; sourceTree = "<group>"; };
+		186447EE2B908C03004AFF70 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		186447F02B90951B004AFF70 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		186447F22B9196E3004AFF70 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		186447F52B91B1F5004AFF70 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		187051F52B8DD9BA009B0895 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187051F82B8DD9BA009B0895 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		187051FA2B8DD9BA009B0895 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				187052082B8DDA61009B0895 /* AccountView.swift */,
+				186447EE2B908C03004AFF70 /* AccountViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -114,6 +123,14 @@
 				186447EC2B906AD3004AFF70 /* DismissXButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		186447F42B91B1E0004AFF70 /* EmptyStates */ = {
+			isa = PBXGroup;
+			children = (
+				186447F52B91B1F5004AFF70 /* EmptyState.swift */,
+			);
+			path = EmptyStates;
 			sourceTree = "<group>";
 		};
 		187051EC2B8DD9BA009B0895 = {
@@ -138,9 +155,7 @@
 				187051F82B8DD9BA009B0895 /* AppetizersApp.swift */,
 				186447E42B906650004AFF70 /* Screens */,
 				44654B562B8EF71800F320EA /* View */,
-				44654B5E2B8F03AE00F320EA /* LoadingView.swift */,
 				44654B572B8EF74400F320EA /* Model */,
-				44654B592B8EF77E00F320EA /* ViewModel */,
 				44654B602B8F04A000F320EA /* Extensions */,
 				44654B582B8EF75800F320EA /* Helpers */,
 				187051FC2B8DD9BC009B0895 /* Assets.xcassets */,
@@ -160,6 +175,8 @@
 		44654B562B8EF71800F320EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				186447F42B91B1E0004AFF70 /* EmptyStates */,
+				44654B5E2B8F03AE00F320EA /* LoadingView.swift */,
 				186447E92B906798004AFF70 /* Buttons */,
 				186447E52B906711004AFF70 /* Cells */,
 			);
@@ -170,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				1870520C2B8DE35C009B0895 /* Appetizer.swift */,
+				186447F22B9196E3004AFF70 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,17 +203,11 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		44654B592B8EF77E00F320EA /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		44654B602B8F04A000F320EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				44654B612B8F04B600F320EA /* Color + Extension.swift */,
+				186447F02B90951B004AFF70 /* String + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,14 +286,18 @@
 				1870520D2B8DE35C009B0895 /* Appetizer.swift in Sources */,
 				44654B622B8F04B600F320EA /* Color + Extension.swift in Sources */,
 				186447E32B904777004AFF70 /* AppetizerDetailView.swift in Sources */,
+				186447EF2B908C03004AFF70 /* AccountViewModel.swift in Sources */,
 				187052132B8DF427009B0895 /* APError.swift in Sources */,
 				1870520F2B8DF02A009B0895 /* AppetizerListCell.swift in Sources */,
 				186447EB2B90685B004AFF70 /* APButton.swift in Sources */,
+				186447F32B9196E3004AFF70 /* User.swift in Sources */,
 				44654B5B2B8EF7B200F320EA /* AppetizerListViewModel.swift in Sources */,
 				187052092B8DDA61009B0895 /* AccountView.swift in Sources */,
+				186447F12B90951B004AFF70 /* String + Extension.swift in Sources */,
 				44654B5F2B8F03AE00F320EA /* LoadingView.swift in Sources */,
 				187051FB2B8DD9BA009B0895 /* AppetizerTabView.swift in Sources */,
 				187052112B8DF315009B0895 /* NetworkManager.swift in Sources */,
+				186447F62B91B1F5004AFF70 /* EmptyState.swift in Sources */,
 				187051F92B8DD9BA009B0895 /* AppetizersApp.swift in Sources */,
 				44654B5D2B8EFC9300F320EA /* Alert.swift in Sources */,
 				186447ED2B906AD3004AFF70 /* DismissXButton.swift in Sources */,
