@@ -8,9 +8,9 @@
 import SwiftUI
 
 extension Color {
-    static let primaryGreen = Color("BrandPrimary")
+    static let primaryGreen = Color("greenPrimary")
 }
 
 extension UIColor {
-    static let primaryGreen = UIColor(named: "BrandPrimary")
+    static let primaryGreen = UIColor(named: "greenPrimary")
 }
