@@ -21,7 +21,6 @@ struct CoinRowView: View {
             
             if showHoldingsColumn {
                 middleColumnView
-                Spacer()
             }
             
             rightColumnView
@@ -36,11 +35,9 @@ struct CoinRowView_Previews: PreviewProvider {
         Group {
             CoinRowView(coin: dev.coin, showHoldingsColumn: true)
                 .previewLayout(.sizeThatFits)
-
         }
     }
 }
-
 
 extension CoinRowView {
     

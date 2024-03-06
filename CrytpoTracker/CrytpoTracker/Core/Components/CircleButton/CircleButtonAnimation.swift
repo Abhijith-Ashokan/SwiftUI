@@ -19,9 +19,6 @@ struct CircleButtonAnimation: View {
             .scale(animate ? 1.0 : 0)
             .opacity(animate ? 0 : 1)
             .animation(animate ? Animation.easeInOut(duration: 0.7) : .none, value: UUID())
-            .onAppear {
-                animate.toggle()
-            }
     }
 }
 

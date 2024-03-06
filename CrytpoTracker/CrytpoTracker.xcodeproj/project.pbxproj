@@ -13,6 +13,7 @@
 		1824B2272B96D3CD00E294C6 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2262B96D3CD00E294C6 /* CoinRowView.swift */; };
 		1824B2292B96E17900E294C6 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2282B96E17900E294C6 /* PreviewProvider.swift */; };
 		1824B22B2B96EE4F00E294C6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B22A2B96EE4F00E294C6 /* Double.swift */; };
+		1824B22D2B98399700E294C6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B22C2B98399700E294C6 /* HomeViewModel.swift */; };
 		189AA5CA2B959E8A00FF6E9B /* CrytpoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA5C92B959E8A00FF6E9B /* CrytpoTrackerApp.swift */; };
 		189AA5CC2B959E8A00FF6E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA5CB2B959E8A00FF6E9B /* ContentView.swift */; };
 		189AA5CE2B959E8C00FF6E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189AA5CD2B959E8C00FF6E9B /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		1824B2262B96D3CD00E294C6 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		1824B2282B96E17900E294C6 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		1824B22A2B96EE4F00E294C6 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		1824B22C2B98399700E294C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		189AA5C62B959E8A00FF6E9B /* CrytpoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytpoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189AA5C92B959E8A00FF6E9B /* CrytpoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytpoTrackerApp.swift; sourceTree = "<group>"; };
 		189AA5CB2B959E8A00FF6E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		189AA5DE2B95AA3400FF6E9B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1824B22C2B98399700E294C6 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1824B2272B96D3CD00E294C6 /* CoinRowView.swift in Sources */,
+				1824B22D2B98399700E294C6 /* HomeViewModel.swift in Sources */,
 				189AA5CC2B959E8A00FF6E9B /* ContentView.swift in Sources */,
 				189AA5DC2B95AA1F00FF6E9B /* HomeView.swift in Sources */,
 				189AA5CA2B959E8A00FF6E9B /* CrytpoTrackerApp.swift in Sources */,

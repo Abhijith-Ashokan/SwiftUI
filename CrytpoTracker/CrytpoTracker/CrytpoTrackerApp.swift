@@ -9,13 +9,16 @@ import SwiftUI
 
 @main
 struct CrytpoTrackerApp: App {
+    
+    @StateObject private var homeVM = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomeView()
                     .toolbar(.hidden)
             }
-            
+            .environmentObject(homeVM)
         }
     }
 }
