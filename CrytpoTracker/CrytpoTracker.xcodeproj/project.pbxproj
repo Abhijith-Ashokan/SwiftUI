@@ -14,6 +14,9 @@
 		1824B2292B96E17900E294C6 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2282B96E17900E294C6 /* PreviewProvider.swift */; };
 		1824B22B2B96EE4F00E294C6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B22A2B96EE4F00E294C6 /* Double.swift */; };
 		1824B22D2B98399700E294C6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B22C2B98399700E294C6 /* HomeViewModel.swift */; };
+		1824B2302B998A3200E294C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B22F2B998A3200E294C6 /* Constants.swift */; };
+		1824B2332B99BFF600E294C6 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2322B99BFF600E294C6 /* CoinDataService.swift */; };
+		1824B2362B99D0FE00E294C6 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2352B99D0FE00E294C6 /* NetworkingManager.swift */; };
 		189AA5CA2B959E8A00FF6E9B /* CrytpoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA5C92B959E8A00FF6E9B /* CrytpoTrackerApp.swift */; };
 		189AA5CC2B959E8A00FF6E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA5CB2B959E8A00FF6E9B /* ContentView.swift */; };
 		189AA5CE2B959E8C00FF6E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189AA5CD2B959E8C00FF6E9B /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		1824B2282B96E17900E294C6 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		1824B22A2B96EE4F00E294C6 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		1824B22C2B98399700E294C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1824B22F2B998A3200E294C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1824B2322B99BFF600E294C6 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		1824B2352B99D0FE00E294C6 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		189AA5C62B959E8A00FF6E9B /* CrytpoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytpoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189AA5C92B959E8A00FF6E9B /* CrytpoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytpoTrackerApp.swift; sourceTree = "<group>"; };
 		189AA5CB2B959E8A00FF6E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1824B22E2B998A0B00E294C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1824B22F2B998A3200E294C6 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1824B2312B99BFE700E294C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1824B2322B99BFF600E294C6 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1824B2342B99D0F000E294C6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1824B2352B99D0FE00E294C6 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		189AA5BD2B959E8A00FF6E9B = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +124,14 @@
 		189AA5C82B959E8A00FF6E9B /* CrytpoTracker */ = {
 			isa = PBXGroup;
 			children = (
-				189AA5D72B95A5EA00FF6E9B /* Extensions */,
+				1824B2342B99D0F000E294C6 /* Utilities */,
+				1824B2312B99BFE700E294C6 /* Services */,
 				1824B2232B95D80E00E294C6 /* Models */,
 				189AA5DA2B95AA0000FF6E9B /* Core */,
 				189AA5C92B959E8A00FF6E9B /* CrytpoTrackerApp.swift */,
 				189AA5CB2B959E8A00FF6E9B /* ContentView.swift */,
+				189AA5D72B95A5EA00FF6E9B /* Extensions */,
+				1824B22E2B998A0B00E294C6 /* Helpers */,
 				189AA5CD2B959E8C00FF6E9B /* Assets.xcassets */,
 				189AA5CF2B959E8C00FF6E9B /* Preview Content */,
 			);
@@ -225,12 +258,15 @@
 				189AA5CC2B959E8A00FF6E9B /* ContentView.swift in Sources */,
 				189AA5DC2B95AA1F00FF6E9B /* HomeView.swift in Sources */,
 				189AA5CA2B959E8A00FF6E9B /* CrytpoTrackerApp.swift in Sources */,
+				1824B2332B99BFF600E294C6 /* CoinDataService.swift in Sources */,
 				1824B21F2B95B4C900E294C6 /* CircleButtonView.swift in Sources */,
 				1824B2222B95CDEE00E294C6 /* CircleButtonAnimation.swift in Sources */,
 				189AA5D92B95A5FB00FF6E9B /* Color.swift in Sources */,
 				1824B2292B96E17900E294C6 /* PreviewProvider.swift in Sources */,
 				1824B22B2B96EE4F00E294C6 /* Double.swift in Sources */,
 				1824B2252B95D81F00E294C6 /* Coin.swift in Sources */,
+				1824B2302B998A3200E294C6 /* Constants.swift in Sources */,
+				1824B2362B99D0FE00E294C6 /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
