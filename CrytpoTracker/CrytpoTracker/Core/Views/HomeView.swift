@@ -22,6 +22,7 @@ struct HomeView: View {
             //MARK: Content layer
             VStack {
                 homeHeader
+                HomeStatisticsView(showPortFolio: $showPortfolio)
                 SearchBarView(searchText: $homeVM.searchBarText)
                 columnTitles
                 if !showPortfolio {
