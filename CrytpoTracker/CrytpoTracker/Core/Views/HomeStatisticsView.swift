@@ -14,7 +14,7 @@ struct HomeStatisticsView: View {
     
     var body: some View {
         HStack {
-            ForEach(vm.stats) { stat in
+            ForEach(vm.statistics) { stat in
                 StatisticsView(stat: stat)
                     .frame(width: (UIScreen.main.bounds.width / 3))
             }

@@ -18,6 +18,38 @@
             endingLineNumber = "18"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "EDA243E3-E6D8-43E4-BC2D-908C8D514929 - 5cd21c877950d955"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.ignoresSafeArea(_: SwiftUI.SafeAreaRegions, edges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of CrytpoTracker.HomeView.homeHeader : some&gt;&gt;.0, &lt;&lt;opaque return type of CrytpoTracker.HomeView.columnTitles : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of CrytpoTracker.HomeView.allCoinsList : some&gt;&gt;.0, &lt;&lt;opaque return type of CrytpoTracker.HomeView.portfolioCoinsList : some&gt;&gt;.0&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in CrytpoTracker.HomeView.body.getter : some"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/Views/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "EDA243E3-E6D8-43E4-BC2D-908C8D514929 - dce74e52f4c9f99a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.ignoresSafeArea(_: SwiftUI.SafeAreaRegions, edges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of CrytpoTracker.HomeView.homeHeader : some&gt;&gt;.0, CrytpoTracker.HomeStatisticsView, CrytpoTracker.SearchBarView, &lt;&lt;opaque return type of CrytpoTracker.HomeView.columnTitles : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of CrytpoTracker.HomeView.allCoinsList : some&gt;&gt;.0, &lt;&lt;opaque return type of CrytpoTracker.HomeView.portfolioCoinsList : some&gt;&gt;.0&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in CrytpoTracker.HomeView.body.getter : some"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/Views/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "256">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

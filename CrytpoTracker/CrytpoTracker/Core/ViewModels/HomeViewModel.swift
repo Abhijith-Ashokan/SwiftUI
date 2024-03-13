@@ -14,14 +14,10 @@ class HomeViewModel: ObservableObject {
     @Published var portfolioCoins: [Coin] = []
     @Published var searchBarText = ""
     
-    @Published var stats = [
-    Statistics(title: "Title", value: "Value", percentageChange: 1),
-    Statistics(title: "Title", value: "Value"),
-    Statistics(title: "Title", value: "Value"),
-    Statistics(title: "Portfolio", value: "Value", percentageChange: -23)
-    ]
+    @Published var statistics: [Statistics] = []
     
-    private let dataService = CoinDataService()
+    private let coinDataService = CoinDataService()
+    private let marketDataService = MarketDataService()
     private var cancellable = Set<AnyCancellable>()
     
     init() {
@@ -31,13 +27,36 @@ class HomeViewModel: ObservableObject {
     func addSubscribers () {
         
         $searchBarText
-            .combineLatest(dataService.$allCoins)
+            .combineLatest(coinDataService.$allCoins)
             .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
             .map(filterCoins)
             .sink {[weak self] returnedCoins in
                 self?.allCoins = returnedCoins
             }
             .store(in: &cancellable)
+        
+        marketDataService.$marketData
+        
+            .map { (marketDataModel) -> [Statistics] in
+                var stats: [Statistics] = []
+                
+                guard let data = marketDataModel else {
+                    return stats
+                }
+                
+                let marketcap = Statistics(title: "Market Cap", value: data.marketCap, percentageChange: data.marketCapChangePercentage24HUsd)
+                let volume = Statistics(title: "24h Volume", value: data.volume)
+                let btcDominance = Statistics(title: "BTC Dominance", value: data.btcDominance)
+                let portfolio = Statistics(title: "Portfolio Value", value: "₹0.00")
+                
+                stats.append(contentsOf: [marketcap,volume,btcDominance,portfolio])
+                return stats
+            }
+            .sink {[weak self] returnedStats in
+                self?.statistics = returnedStats
+            }
+            .store(in: &cancellable)
+        
     }
     
     private func filterCoins(text: String, coins: [Coin]) -> [Coin] {

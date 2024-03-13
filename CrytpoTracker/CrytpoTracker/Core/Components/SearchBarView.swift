@@ -2,7 +2,7 @@
 //  SearchBarView.swift
 //  CrytpoTracker
 //
-//  Created by Aoole on 11/03/24.
+//  Created by Abhijith on 11/03/24.
 //
 
 import SwiftUI
@@ -22,22 +22,22 @@ struct SearchBarView: View {
                 .overlay(
                     Image(systemName: "xmark.circle.fill")
                         .foregroundStyle(Color.theme.secondaryText)
+                        .onTapGesture {
+                            self.searchText = ""
+                            UIApplication.shared.endEditing()
+                        }
                         .padding()
                         .offset(x: 15)
                         .opacity(searchText.isEmpty ? 0.0 : 1.0)
                     ,alignment: .trailing
-                ).onTapGesture {
-                    self.searchText = ""
-                    UIApplication.shared.endEditing() 
-                }
-            
+                )
         }
         .font(.headline)
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color.theme.background)
-                .shadow(color: Color.theme.accent.opacity(0.15), radius: 10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0)
+                .shadow(color: Color.theme.accent.opacity(0.15), radius: 10)
         )
     }
 }
