@@ -309,102 +309,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A8CDF3F7-222B-47E6-A4A0-93D21651C6B2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "addSubscribers()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CF602171-7589-471E-B6DC-CD615604C31F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "addSubscribers()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CF602171-7589-471E-B6DC-CD615604C31F - 701e18d1ace7fca3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (Swift.Array&lt;CrytpoTracker.Coin&gt;, Swift.Array&lt;CrytpoTracker.PortfolioEntity&gt;) -&gt; Swift.Array&lt;CrytpoTracker.Coin&gt; in CrytpoTracker.HomeViewModel.addSubscribers() -&gt; ()"
-                  moduleName = "CrytpoTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  uuid = "CF602171-7589-471E-B6DC-CD615604C31F - 5c49f0a82eb6d1c2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (CrytpoTracker.Coin) -&gt; Swift.Optional&lt;CrytpoTracker.Coin&gt; in closure #4 (Swift.Array&lt;CrytpoTracker.Coin&gt;, Swift.Array&lt;CrytpoTracker.PortfolioEntity&gt;) -&gt; Swift.Array&lt;CrytpoTracker.Coin&gt; in CrytpoTracker.HomeViewModel.addSubscribers() -&gt; ()"
-                  moduleName = "CrytpoTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B6D52422-442D-4C59-BBE5-96583F527AB1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "addSubscribers()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "37718A66-6A12-4528-A4B1-2F49A816C3B6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CrytpoTracker/Services/PortfolioDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "getPortfolio()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6FC22B70-B322-4A8B-BD32-EA970CDC60CB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -549,15 +453,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6D9718AA-30BB-4821-B18E-47DF308AD7AE"
+            uuid = "01464C3B-1034-4980-BFB6-9682126ACAD7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "updatePorfolio(coin:amount:)"
             landmarkType = "7">
          </BreakpointContent>

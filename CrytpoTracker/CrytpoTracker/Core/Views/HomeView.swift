@@ -87,6 +87,13 @@ extension HomeView {
         }
         .transition(.move(edge: .leading))
         .listStyle(.plain)
+        .refreshable {
+            reloadData() 
+        }
+    }
+    
+    private func reloadData() {
+        homeVM.reloadData()
     }
     
     private var portfolioCoinsList: some View {

@@ -17,7 +17,7 @@ class CoinDataService {
         getCoins ()
     }
     
-    private func getCoins() {
+    func getCoins() {
         guard let url = URL(string: URLConstants.coinGeckoMarketURL) else { return }
         
         coinSubscription = NetworkingManager.download(url: url)
