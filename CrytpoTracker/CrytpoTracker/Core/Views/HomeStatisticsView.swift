@@ -2,7 +2,7 @@
 //  HomeStatisticsView.swift
 //  CrytpoTracker
 //
-//  Created by Aoole on 11/03/24.
+//  Created by Abhijith on 11/03/24.
 //
 
 import SwiftUI

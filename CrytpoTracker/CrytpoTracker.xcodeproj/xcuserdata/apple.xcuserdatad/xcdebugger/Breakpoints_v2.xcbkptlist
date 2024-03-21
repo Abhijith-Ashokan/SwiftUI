@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EDA243E3-E6D8-43E4-BC2D-908C8D514929"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CrytpoTracker/Core/Views/HomeView.swift"
@@ -48,6 +48,21 @@
                   startingLineNumber = "19"
                   endingLineNumber = "19"
                   offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "EDA243E3-E6D8-43E4-BC2D-908C8D514929 - a2d0fe06884117cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of CrytpoTracker.HomeView.homeHeader : some&gt;&gt;.0, CrytpoTracker.HomeStatisticsView, CrytpoTracker.SearchBarView, &lt;&lt;opaque return type of CrytpoTracker.HomeView.columnTitles : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of CrytpoTracker.HomeView.allCoinsList : some&gt;&gt;.0, &lt;&lt;opaque return type of CrytpoTracker.HomeView.portfolioCoinsList : some&gt;&gt;.0&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in CrytpoTracker.HomeView.body.getter : some"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/Views/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "388">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -273,6 +288,278 @@
                   offsetFromSymbolStart = "612">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3D1FE1A-BF91-4ED0-89DF-5E363704ACA2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Core/Views/PortfolioView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "saveButtonPressed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8CDF3F7-222B-47E6-A4A0-93D21651C6B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "addSubscribers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF602171-7589-471E-B6DC-CD615604C31F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "addSubscribers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF602171-7589-471E-B6DC-CD615604C31F - 701e18d1ace7fca3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.Array&lt;CrytpoTracker.Coin&gt;, Swift.Array&lt;CrytpoTracker.PortfolioEntity&gt;) -&gt; Swift.Array&lt;CrytpoTracker.Coin&gt; in CrytpoTracker.HomeViewModel.addSubscribers() -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "CF602171-7589-471E-B6DC-CD615604C31F - 5c49f0a82eb6d1c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CrytpoTracker.Coin) -&gt; Swift.Optional&lt;CrytpoTracker.Coin&gt; in closure #4 (Swift.Array&lt;CrytpoTracker.Coin&gt;, Swift.Array&lt;CrytpoTracker.PortfolioEntity&gt;) -&gt; Swift.Array&lt;CrytpoTracker.Coin&gt; in CrytpoTracker.HomeViewModel.addSubscribers() -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6D52422-442D-4C59-BBE5-96583F527AB1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "addSubscribers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37718A66-6A12-4528-A4B1-2F49A816C3B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Services/PortfolioDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getPortfolio()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FC22B70-B322-4A8B-BD32-EA970CDC60CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Services/PortfolioDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "save()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6FC22B70-B322-4A8B-BD32-EA970CDC60CB - d1c00149163e2de9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrytpoTracker.PortfolioDataService.save() -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Services/PortfolioDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "6FC22B70-B322-4A8B-BD32-EA970CDC60CB - d1c00149163e2de9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrytpoTracker.PortfolioDataService.save() -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Services/PortfolioDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C301091D-D81C-40C3-9FA2-1B7A2C488147"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Services/PortfolioDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "applyChanges()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C301091D-D81C-40C3-9FA2-1B7A2C488147 - b127602e80e4261a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrytpoTracker.PortfolioDataService.applyChanges() -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Services/PortfolioDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "C301091D-D81C-40C3-9FA2-1B7A2C488147 - b127602e80e4261a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrytpoTracker.PortfolioDataService.applyChanges() -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Services/PortfolioDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EF3513C-6F15-4040-A64E-3D9DE9EF0B70"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Services/PortfolioDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "update(entity:amount:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3EF3513C-6F15-4040-A64E-3D9DE9EF0B70 - ffba5a07ad47298"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrytpoTracker.PortfolioDataService.update(entity: CrytpoTracker.PortfolioEntity, amount: Swift.Double) -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Services/PortfolioDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3EF3513C-6F15-4040-A64E-3D9DE9EF0B70 - ffba5a07ad47298"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrytpoTracker.PortfolioDataService.update(entity: CrytpoTracker.PortfolioEntity, amount: Swift.Double) -&gt; ()"
+                  moduleName = "CrytpoTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/LearnPOCs/SwiftUI/CrytpoTracker/CrytpoTracker/Services/PortfolioDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D9718AA-30BB-4821-B18E-47DF308AD7AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrytpoTracker/Core/ViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "updatePorfolio(coin:amount:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

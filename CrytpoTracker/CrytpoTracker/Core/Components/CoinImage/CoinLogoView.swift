@@ -2,7 +2,7 @@
 //  CoinLogoView.swift
 //  CrytpoTracker
 //
-//  Created by Aoole on 15/03/24.
+//  Created by Abhijith on 15/03/24.
 //
 
 import SwiftUI

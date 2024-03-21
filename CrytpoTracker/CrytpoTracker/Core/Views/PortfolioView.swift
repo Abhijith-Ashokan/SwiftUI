@@ -2,7 +2,7 @@
 //  PortfolioView.swift
 //  CrytpoTracker
 //
-//  Created by Aoole on 15/03/24.
+//  Created by Abhijith on 15/03/24.
 //
 
 import SwiftUI
@@ -41,6 +41,11 @@ struct PortfolioView: View {
                     }
                 }
             }
+            .onChange(of: vm.searchBarText) { oldValue, newValue in
+                if newValue == "" {
+                    removeCoinSelection()
+                }
+            }
    
         }
     }
@@ -56,7 +61,7 @@ extension PortfolioView {
     private var coinLogoList: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 10) {
-                ForEach(vm.allCoins) { coin  in
+                ForEach(vm.searchBarText.isEmpty ? vm.portfolioCoins : vm.allCoins) { coin  in
                     CoinLogoView(coin: coin)
                         .frame(width: 75, height: 120)
                         .padding(4)
@@ -69,7 +74,7 @@ extension PortfolioView {
                                 if selectedCoin?.id == coin.id {
                                     selectedCoin = nil
                                 } else {
-                                    selectedCoin = coin
+                                    updateSelectedCoin(coin: coin)
                                 }
                             }
                         }
@@ -78,6 +83,16 @@ extension PortfolioView {
             .padding(.vertical, 4)
             .padding(.leading)
             Text("")
+        }
+    }
+    
+    private func updateSelectedCoin(coin: Coin) {
+        selectedCoin = coin
+        
+        if let portfolioCoin = vm.portfolioCoins.first(where: { $0.id == coin.id}), let amount = portfolioCoin.currentHoldings {
+            quantityText = "\(amount)"
+        } else {
+            quantityText = ""
         }
     }
     
@@ -133,9 +148,14 @@ extension PortfolioView {
     
     private func saveButtonPressed() {
         
-        guard let coin = selectedCoin else { return }
+        guard
+            let coin = selectedCoin,
+            let amount = Double(quantityText)
+            else { return }
         
         //save logic
+        
+        vm.updatePorfolio(coin: coin, amount: amount)
         
         withAnimation(.easeIn) {
             showCheckmark = true
