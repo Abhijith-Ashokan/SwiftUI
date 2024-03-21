@@ -25,4 +25,4 @@ jobs:
         pod install
 
     - name: Build
-      run: xcodebuild -project SwiftUI/CryptoTracker.xcodeproj -scheme CryptoTracker -destination 'platform=iOS Simulator,name=iPhone 15' build
+      run: xcodebuild -project SwiftUI/CryptoTracker/CryptoTracker.xcodeproj -scheme CryptoTracker -destination 'platform=iOS Simulator,name=iPhone 15' build
