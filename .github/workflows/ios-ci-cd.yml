@@ -11,18 +11,22 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: 'latest'
+      - name: Install Xcode
+        run: sudo xcode-select --install
 
-    - name: Install dependencies
-      run: |
-        xcodebuild -resolvePackageDependencies
-        pod install
+      - name: Accept Xcode license
+        run: sudo xcodebuild -license accept
 
-    - name: Build
-      run: xcodebuild -project SwiftUI/CryptoTracker/CryptoTracker.xcodeproj -scheme CryptoTracker -destination 'platform=iOS Simulator,name=iPhone 15' build
+      - name: Install CocoaPods
+        run: sudo gem install cocoapods
+
+      - name: Install dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies
+          pod install
+
+      - name: Build
+        run: xcodebuild -project SwiftUI/CryptoTracker/CryptoTracker.xcodeproj -scheme CryptoTracker -destination 'platform=iOS Simulator,name=iPhone 15' build
