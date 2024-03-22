@@ -13,8 +13,8 @@ class HomeViewModel: ObservableObject {
     @Published var allCoins: [Coin] = []
     @Published var portfolioCoins: [Coin] = []
     @Published var searchBarText = ""
-    
     @Published var statistics: [Statistics] = []
+    @Published var sortOption: SortOption = .holdings
     
     private let coinDataService = CoinDataService()
     private let marketDataService = MarketDataService()
@@ -25,13 +25,17 @@ class HomeViewModel: ObservableObject {
         addSubscribers()
     }
     
+    enum SortOption {
+        case rank, rankReversed, holdings, holdgingsReversed, price, priceReversed
+    }
+    
     func addSubscribers () {
         
         //update allCoins
         $searchBarText
-            .combineLatest(coinDataService.$allCoins)
+            .combineLatest(coinDataService.$allCoins, $sortOption)
             .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
-            .map(filterCoins)
+            .map(filterAndSortCoins)
             .sink {[weak self] returnedCoins in
                 self?.allCoins = returnedCoins
             }
@@ -42,7 +46,8 @@ class HomeViewModel: ObservableObject {
             .combineLatest(portfolioDataService.$savedEntities)
             .map(mapAllCoinsToPortfolioCoins)
             .sink { [weak self] (returnedCoins) in
-                self?.portfolioCoins = returnedCoins
+                guard let self = self else { return }
+                self.portfolioCoins = self.sortPortfolioCoinsIfNeeded(coins: returnedCoins)
             }
             .store(in: &cancellable)
         
@@ -65,6 +70,12 @@ class HomeViewModel: ObservableObject {
         marketDataService.getData()
     }
     
+    private func filterAndSortCoins(text: String, coins: [Coin], sortOption: SortOption) -> [Coin] {
+        var updatedCoins = self.filterCoins(text: text, coins: coins)
+        sortCoins(coins: &updatedCoins, sortOption: sortOption)
+        return updatedCoins
+    }
+    
     private func filterCoins(text: String, coins: [Coin]) -> [Coin] {
         
         guard !text.isEmpty else { return coins }
@@ -74,6 +85,32 @@ class HomeViewModel: ObservableObject {
             return coin.name.lowercased().contains(lowercasedText) ||
             coin.symbol.lowercased().contains(lowercasedText) ||
             coin.id.lowercased().contains(lowercasedText)
+        }
+    }
+    
+    private func sortCoins(coins: inout [Coin], sortOption: SortOption) {
+        
+        switch sortOption {
+        case .rank, .holdings:
+            coins.sort { $0.rank < $1.rank}
+        case .rankReversed, .holdgingsReversed:
+            coins.sort { $0.rank > $1.rank}
+        case .price:
+            coins.sort { $0.currentPrice < $1.currentPrice}
+        case .priceReversed:
+            coins.sort { $0.currentPrice > $1.currentPrice}
+        }
+    }
+    
+    private func sortPortfolioCoinsIfNeeded(coins: [Coin]) -> [Coin] {
+        switch sortOption {
+            
+        case .holdings:
+            return coins.sorted { $0.currentHoldingsValue > $1.currentHoldingsValue }
+        case .holdgingsReversed:
+            return coins.sorted { $0.currentHoldingsValue < $1.currentHoldingsValue }
+        default:
+            return coins
         }
     }
     
