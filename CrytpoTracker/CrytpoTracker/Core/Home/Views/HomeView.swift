@@ -13,6 +13,9 @@ struct HomeView: View {
     @State private var showPortfolioView: Bool = false  //new sheet
     @EnvironmentObject private var homeVM: HomeViewModel
     
+    @State private var selectedCoin: Coin? = nil
+    @State private var showDetailView: Bool = false
+    
     var body: some View {
         ZStack {
             
@@ -24,17 +27,22 @@ struct HomeView: View {
                 })
             
             //MARK: Content layer
-            VStack {
-                homeHeader
-                HomeStatisticsView(showPortFolio: $showPortfolio)
-                SearchBarView(searchText: $homeVM.searchBarText)
-                columnTitles
-                if !showPortfolio {
-                    allCoinsList
-                } else {
-                    portfolioCoinsList
+            NavigationStack {
+                VStack {
+                    homeHeader
+                    HomeStatisticsView(showPortFolio: $showPortfolio)
+                    SearchBarView(searchText: $homeVM.searchBarText)
+                    columnTitles
+                    if !showPortfolio {
+                        allCoinsList
+                    } else {
+                        portfolioCoinsList
+                    }
+                    Spacer(minLength: 0)
                 }
-                Spacer(minLength: 0)
+                .navigationDestination(isPresented: $showDetailView) {
+                    DetailLoadingView(coin: $selectedCoin)
+                }
             }
         }
     }
@@ -83,6 +91,9 @@ extension HomeView {
             ForEach(homeVM.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segueToDetailView(coin: coin)
+                    }
             }
         }
         .transition(.move(edge: .leading))
@@ -94,6 +105,11 @@ extension HomeView {
     
     private func reloadData() {
         homeVM.reloadData()
+    }
+    
+    private func segueToDetailView(coin: Coin){
+        selectedCoin = coin
+        showDetailView.toggle()
     }
     
     private var portfolioCoinsList: some View {
