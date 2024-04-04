@@ -39,22 +39,32 @@ struct DetailView: View {
     }
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                Text("") //TODO: placeholder for graph
-                    .frame(height: 150)
-                
-                overviewTitle
-                Divider()
-                overviewGrid
-                
-                additionalTitle
-                Divider()
-                additionalGrid
-              
+            VStack {
+                ChartView(coin: vm.coin)
+                    .padding(.vertical)
+                VStack(spacing: 20) {
+                    overviewTitle
+                    Divider()
+                    overviewGrid
+                    
+                    additionalTitle
+                    Divider()
+                    additionalGrid
+                    
+                }
+                .padding()
             }
-            .padding()
         }
         .navigationTitle(vm.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                HStack {
+                    Text(coin.symbol.uppercased())
+                    CoinImageView(coin: coin)
+                        .frame(width: 25, height: 25)
+                }
+            }
+        }
     }
 }
 

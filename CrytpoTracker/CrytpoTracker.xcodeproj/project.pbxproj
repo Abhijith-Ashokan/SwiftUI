@@ -11,6 +11,8 @@
 		180D8AF22BB3E5DC000B0544 /* CoinDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D8AF12BB3E5DC000B0544 /* CoinDetail.swift */; };
 		180D8AF52BB3EA2A000B0544 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D8AF42BB3EA2A000B0544 /* DetailViewModel.swift */; };
 		180D8AF82BB3EB22000B0544 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D8AF72BB3EB22000B0544 /* CoinDetailDataService.swift */; };
+		180D8AFA2BBE729F000B0544 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D8AF92BBE729F000B0544 /* ChartView.swift */; };
+		180D8AFC2BBE8ADE000B0544 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D8AFB2BBE8ADE000B0544 /* Date.swift */; };
 		1824B21F2B95B4C900E294C6 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B21E2B95B4C900E294C6 /* CircleButtonView.swift */; };
 		1824B2222B95CDEE00E294C6 /* CircleButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2212B95CDEE00E294C6 /* CircleButtonAnimation.swift */; };
 		1824B2252B95D81F00E294C6 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2242B95D81F00E294C6 /* Coin.swift */; };
@@ -49,6 +51,8 @@
 		180D8AF12BB3E5DC000B0544 /* CoinDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetail.swift; sourceTree = "<group>"; };
 		180D8AF42BB3EA2A000B0544 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		180D8AF72BB3EB22000B0544 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		180D8AF92BBE729F000B0544 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		180D8AFB2BBE8ADE000B0544 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		1824B21E2B95B4C900E294C6 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		1824B2212B95CDEE00E294C6 /* CircleButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimation.swift; sourceTree = "<group>"; };
 		1824B2242B95D81F00E294C6 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1802B1712BAD92BF00BA1D56 /* DetailView.swift */,
+				180D8AF92BBE729F000B0544 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			children = (
 				189AA5D82B95A5FB00FF6E9B /* Color.swift */,
 				1857E8672B9EE2C900461DDB /* UIApplication.swift */,
+				180D8AFB2BBE8ADE000B0544 /* Date.swift */,
 				1824B2282B96E17900E294C6 /* PreviewProvider.swift */,
 				1824B22A2B96EE4F00E294C6 /* Double.swift */,
 			);
@@ -366,6 +372,7 @@
 				1857E8682B9EE2C900461DDB /* UIApplication.swift in Sources */,
 				1802B1722BAD92BF00BA1D56 /* DetailView.swift in Sources */,
 				180D8AF52BB3EA2A000B0544 /* DetailViewModel.swift in Sources */,
+				180D8AFC2BBE8ADE000B0544 /* Date.swift in Sources */,
 				1824B23D2B9AF2E100E294C6 /* CoinImageViewModel.swift in Sources */,
 				1824B2222B95CDEE00E294C6 /* CircleButtonAnimation.swift in Sources */,
 				189AA5D92B95A5FB00FF6E9B /* Color.swift in Sources */,
@@ -377,6 +384,7 @@
 				1824B22B2B96EE4F00E294C6 /* Double.swift in Sources */,
 				1824B2252B95D81F00E294C6 /* Coin.swift in Sources */,
 				1824B2302B998A3200E294C6 /* Constants.swift in Sources */,
+				180D8AFA2BBE729F000B0544 /* ChartView.swift in Sources */,
 				1857E86C2B9F013200461DDB /* StatisticsView.swift in Sources */,
 				1824B23B2B9AEF8600E294C6 /* CoinImageService.swift in Sources */,
 				1824B2362B99D0FE00E294C6 /* NetworkingManager.swift in Sources */,
