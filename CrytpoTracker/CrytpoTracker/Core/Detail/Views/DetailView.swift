@@ -55,6 +55,7 @@ struct DetailView: View {
                 .padding()
             }
         }
+        .scrollIndicators(.hidden)
         .navigationTitle(vm.coin.name)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
